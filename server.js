@@ -3,11 +3,13 @@ const app = express();
 const connect = require("./config/dbConfig");
 
 require("dotenv").config();
-
 app.use(express.json());
 
+const usersRoute = require("./routes/userRoutes");
 
 
+
+app.use("/api/users", usersRoute);
 const port = process.env.PORT || 5000;
 
 const path = require("path");
