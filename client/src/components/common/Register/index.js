@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { registerUser } from "../../../apicalls/user";
 import { HideLoading, ShowLoading } from "../../../redux/loaderSlice";
-
 export const Register = () => {
 
   const dispatch = useDispatch();
@@ -52,7 +51,7 @@ export const Register = () => {
               >
                 Register
               </button>
-              <Link to="/login">Already a member? Login</Link>
+              {/* <Link to="/login">Already a member? Login</Link> */}
             </div>
           </Form>
          </div>

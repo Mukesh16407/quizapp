@@ -6,15 +6,15 @@ import "./stylesheets/custom-components.css";
 import "./stylesheets/form-elements.css";
 import "./stylesheets/layout.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Register} from "./pages/common/Register/index";
-import { Login } from "./pages/common/Login";
+import {Register} from "./components/common/Register";
+import { Login } from "./components/common/Login";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Routes>
-      <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login/>} />
+      <Route path="/register" element={<Register />} />
 
       </Routes>
       </BrowserRouter>
