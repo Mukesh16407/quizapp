@@ -6,10 +6,11 @@ require("dotenv").config();
 app.use(express.json());
 
 const usersRoute = require("./routes/userRoutes");
-
+const examsRoute = require("./routes/examsRoute");
 
 
 app.use("/api/users", usersRoute);
+app.use("/api/exams", examsRoute)
 const port = process.env.PORT || 5000;
 
 const path = require("path");
